@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for FILENAME in "$@"
+do
+	BASENAME=`basename "$FILENAME" .zip`
+	mkdir "$BASENAME" && unzip "$FILENAME" -d "${BASENAME}/" && rm -i "$FILENAME"
+done
+
