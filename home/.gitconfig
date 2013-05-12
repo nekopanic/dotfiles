@@ -1,0 +1,7 @@
+[user]
+	email = steven.farlie@gmail.com
+	name = Steven Farlie
+[color]
+	ui = auto
+[push]
+	default = simple
