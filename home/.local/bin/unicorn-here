@@ -1,5 +1,0 @@
-#!/bin/bash
-
-source $(rvm 1.9.3@unicorn do rvm env --path)
-unicorn $HOME/.unicorn-here.ru
-
