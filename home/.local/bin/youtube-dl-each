@@ -1,0 +1,8 @@
+#!/bin/bash
+
+while read
+do
+   echo "$REPLY"
+   youtube-dl --max-quality=22 -o "%(uploader)s-%(epoch)s-%(stitle)s.%(ext)s" "$REPLY"
+done
+

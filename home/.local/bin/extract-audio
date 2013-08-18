@@ -1,0 +1,4 @@
+#!/bin/sh
+#transcode -i $1 -y ffmpeg -N 0x1 -F ljpeg -o `basename $1`.avi
+#transcode -i $1 -y raw,null -F I420 -o `basename $1`.I420
+transcode -i $1 -y null,wav -o `basename $1`.wav
