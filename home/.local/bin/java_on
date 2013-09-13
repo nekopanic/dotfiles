@@ -1,0 +1,5 @@
+export JAVA_HOME=$HOME/.local/opt/java
+export JDK_HOME=$HOME/.local/opt/java
+export MVN_HOME=$HOME/.local/opt/maven
+export ANT_HOME=$HOME/.local/opt/ant
+export PATH=$JAVA_HOME/bin:$MVN_HOME/bin:$ANT_HOME/bin:$PATH

@@ -112,3 +112,6 @@ alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 # For Ruby I use RVM, but I do not let it infect the shell
 # by default.
 alias rvm_on="source $HOME/.rvm/scripts/rvm"
+
+# For Java there are symlinks in ~/programs for java, maven and ant
+alias java_on="source $HOME/.local/bin/java_on"
