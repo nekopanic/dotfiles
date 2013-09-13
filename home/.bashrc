@@ -113,5 +113,5 @@ alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 # by default.
 alias rvm_on="source $HOME/.rvm/scripts/rvm"
 
-# For Java there are symlinks in ~/programs for java, maven and ant
+# For Java there are symlinks in ~/.local/opt for java, maven and ant
 alias java_on="source $HOME/.local/bin/java_on"
