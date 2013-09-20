@@ -4,14 +4,18 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+; Local libraries
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(load "better-defaults/better-defaults.el")
+(add-to-list 'load-path "~/.local/opt/go/misc/emacs/" t)
+(require 'go-mode-load)
+
+; Local settings
+
 ; Themes and GUI stuff
 (load-theme 'wombat)
 (custom-set-variables
    '(initial-frame-alist (quote ((fullscreen . maximized)))))
-
-; Local libraries and settings
-(add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(load "better-defaults/better-defaults.el")
 
 (setq inhibit-splash-screen t) ; no splash screen, sheesh!
 (global-linum-mode 1) ; line numbers please

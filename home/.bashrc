@@ -115,3 +115,9 @@ alias rvm_on="source $HOME/.rvm/scripts/rvm"
 
 # For Java there are symlinks in ~/.local/opt for java, maven and ant
 alias java_on="source $HOME/.local/bin/java_on"
+
+# Golang is in ~/.local/opt/go
+# Because go doesn't screw things up we can leave it on all the time
+source $HOME/.local/bin/go_on
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
