@@ -23,6 +23,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 filetype plugin indent on     " required!
 
+Bundle 'tpope/vim-surround'
+
  "
  " Brief help
  " :BundleList          - list configured bundles
@@ -33,3 +35,12 @@ filetype plugin indent on     " required!
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+set expandtab
+
+
+" Ruby
+Bundle 'vim-ruby/vim-ruby'
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+let ruby_space_errors = 1

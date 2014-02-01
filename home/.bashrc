@@ -109,10 +109,6 @@ fi
 PATH=$HOME/.local/bin:$PATH
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 
-# For Ruby I use RVM, but I do not let it infect the shell
-# by default.
-alias rvm_on="source $HOME/.rvm/scripts/rvm"
-
 # For Java there are symlinks in ~/.local/opt for java, maven and ant
 alias java_on="source $HOME/.local/bin/java_on"
 
@@ -121,3 +117,10 @@ alias java_on="source $HOME/.local/bin/java_on"
 source $HOME/.local/bin/go_on
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# RBEnv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
