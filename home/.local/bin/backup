@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BACKUP_PATH=/media/swf/BANANABOAT/$HOSTNAME
-if [ ! -d /media/swf/BANANABOAT ]; then
-  read -e -i "rdiff-backup destination (e.g. bananaking.local::/media/swf/BANANABOAT/seagoat): " BACKUP_PATH
+BACKUP_PATH=/media/swf/LUMPYSPACE/$HOSTNAME
+if [ ! -d /media/swf/LUMPYSPACE ]; then
+  read -e -i "rdiff-backup destination (e.g. bananaking.local::/media/swf/LUMPYSPACE/seagoat): " BACKUP_PATH
 fi
 
 rdiff-backup -v5 --exclude-if-present .nobackup --include-globbing-filelist $HOME/.backup.$HOSTNAME / $BACKUP_PATH
