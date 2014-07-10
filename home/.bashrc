@@ -124,3 +124,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+alias be="bundle exec"
