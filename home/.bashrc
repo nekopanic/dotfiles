@@ -107,7 +107,9 @@ fi
 # Local configuration through dotfiles,
 # Install homeshick for full effect!
 PATH=$HOME/.local/bin:$PATH
-alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
+
+# alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # For Java there are symlinks in ~/.local/opt for java, maven and ant
 alias java_on="source $HOME/.local/bin/java_on"
